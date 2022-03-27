@@ -56,13 +56,11 @@ switch ($x['path']) {
     <meta name="twitter:title" content="<?=isset($hasil['data']['title']) ? 'Watch '.$hasil['data']['title'] : 'Watch Anime for Free! - '.TITLE?>">
     <meta name="twitter:description" content="<?=isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title'].' 360p, 480p, 720p, 1080p for free | KissAnime | 4anime | 9anime' : TITLE.' is the best free anime streaming website where you can watch English Subbed, Raw, and Dubbed anime online'?>">
     <meta name="twitter:image:src" content="<?= $hasil['data']['list_eps'][0]['image']['onerror'] ?? ''?>">
-    <!-- Twitter - Article -->
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
     <meta name="og:title" content="<?=isset($hasil['data']['title']) ? 'Watch '.$hasil['data']['title'] : 'Watch Anime for Free! - '.TITLE?>">
     <meta name="og:description" content="<?=isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title'].' 360p, 480p, 720p, 1080p for free | KissAnime | 4anime | 9anime' : TITLE.' is the best free anime streaming website where you can watch English Subbed, Raw, and Dubbed anime online'?>">
     <meta name="og:image" content="<?= $hasil['data']['list_eps'][0]['image']['onerror'] ?? ''?>">
     <meta name="og:type" content="article">
-    <!-- Open Graph - Article -->
     
   </head>
   <body style="background-color: #393E46">
