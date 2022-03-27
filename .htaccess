@@ -1,5 +1,7 @@
 RewriteEngine On
 
+RedirectMatch 301 ^/?q=(.*) /search/$1
+
 RewriteRule ^search/(.*)$ index.php?url=/search.html?keyword=$1 [L,QSA]
 
 RewriteRule ^404(.*)$ html/404.php$1 [L,QSA]
