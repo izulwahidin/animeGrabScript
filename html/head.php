@@ -41,24 +41,24 @@ switch ($x['path']) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="<?=DOMAIN?>/html/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?=DOMAIN?>/html/assets/style.css" rel="stylesheet">
-    <title><?= $hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?></title>
-    <meta name="title" content="<?= $hasil['data']['title'] ?? 'Watch Anime Free! - '.TITLE?>">
+    <title><?='Watch '.$hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?></title>
+    <meta name="title" content="<?=$hasil['data']['title'] ?? 'Watch Anime Free! - '.TITLE?>">
     <meta name="description" content="<?=isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title'].' 360p, 480p, 720p, 1080p for free | KissAnime | 4anime | 9anime' : TITLE.' is the best free anime streaming website where you can watch English Subbed, Raw, and Dubbed anime online'?>">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="English">
     
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="<?= $hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?>">
+    <meta itemprop="name" content="<?='Watch '.$hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?>">
     <meta itemprop="description" content="<?=isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title'].' 360p, 480p, 720p, 1080p for free | KissAnime | 4anime | 9anime' : TITLE.' is the best free anime streaming website where you can watch English Subbed, Raw, and Dubbed anime online'?>">
     <meta itemprop="image" content="<?= $hasil['data']['list_eps'][0]['image']['onerror'] ?? ''?>">
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="<?= $hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?>">
+    <meta name="twitter:title" content="<?='Watch '.$hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?>">
     <meta name="twitter:description" content="<?=isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title'].' 360p, 480p, 720p, 1080p for free | KissAnime | 4anime | 9anime' : TITLE.' is the best free anime streaming website where you can watch English Subbed, Raw, and Dubbed anime online'?>">
     <meta name="twitter:image:src" content="<?= $hasil['data']['list_eps'][0]['image']['onerror'] ?? ''?>">
     <!-- Twitter - Article -->
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="<?= $hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?>">
+    <meta name="og:title" content="<?='Watch '.$hasil['data']['title'] ?? 'Watch Anime for Free! - '.TITLE?>">
     <meta name="og:description" content="<?=isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title'].' 360p, 480p, 720p, 1080p for free | KissAnime | 4anime | 9anime' : TITLE.' is the best free anime streaming website where you can watch English Subbed, Raw, and Dubbed anime online'?>">
     <meta name="og:image" content="<?= $hasil['data']['list_eps'][0]['image']['onerror'] ?? ''?>">
     <meta name="og:type" content="article">
