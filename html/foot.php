@@ -6,11 +6,12 @@
     </footer>
     <script src="<?=DOMAIN?>/html/assets/js/bootstrap.bundle.min.js"></script>
     <script>
+    localStorage.setItem(sha1(window.location.href),'true');
     document.querySelectorAll('#check_eps').forEach(v => {
       let hashed = 'w'+sha1(v.href);
-      v.addEventListener('click', async () => {
-        await localStorage.setItem(hashed,'true');
-      });
+      // v.addEventListener('click', () => {
+      //   localStorage.setItem(hashed,'true');
+      // });
 
       if(localStorage.getItem(hashed) == 'true'){
         if(v.childNodes[1].localName == "span"){
