@@ -3,7 +3,7 @@ define('DOMAIN', 'https://animegrabscript.herokuapp.com'); //domain website
 define('TITLE', 'KissAnime'); //judul website
 $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'])),true);
 
-// print_r($hasil);die();
+print_r($hasil);die();
 // print_r($_GET['url']);die();
 if(isset($hasil['data']['list'])){
 	include('./html/page.php');
