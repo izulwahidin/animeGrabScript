@@ -1,5 +1,5 @@
 <?php
-define('DOMAIN', 'https://animegrabscript.herokuapp.com/'); //domain website
+define('DOMAIN', 'https://animegrabscript.herokuapp.com'); //domain website
 define('TITLE', 'KissAnime'); //judul website
 $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'])),true);
 
