@@ -1,5 +1,5 @@
 <?php
-define('DOMAIN', 'http://localhost/anime'); //domain website
+define('DOMAIN', 'https://animegrabscript.herokuapp.com/'); //domain website
 define('TITLE', 'KissAnime'); //judul website
 $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'])),true);
 
@@ -21,7 +21,7 @@ function fetch($url){
 
 		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_PROXY, '172.19.0.1:2231');
+// 		curl_setopt($ch, CURLOPT_PROXY, '172.19.0.1:2231');
 
 		$result = curl_exec($ch);
 		if (curl_errno($ch)) {
