@@ -10,7 +10,7 @@ include('head.php');
           	<a id='check_eps' href="<?=DOMAIN.$value['url']?>">
 	            <img class="img-fluid-content rounded" src="<?=$value['image']['url']?>?w=300" alt="<?=explode(' Episode',$value['title'])[0]?>">
 	            <p class="bg-dark card__text p-1 lh-1 text-light text-truncate"><?=$value['title']?><br><small><?=$value['time']?></small></p>
-	            <p id="watched" class="card__text__watched text-light" hidden></p>
+	            <p id="watched" class="card__text__watched text-light"></p>
         	</a>
           </div>
         </div>
