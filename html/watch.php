@@ -28,7 +28,7 @@ include('head.php');
           	<a id='check_eps' href="<?=DOMAIN.$value['url']?>">
 	            <img class="img-fluid-content rounded" src="<?=$value['image']['url']?>?w=300" alt="<?=explode(' Episode',$value['title'])[0]?>">
 	            <p class="card__text p-1 lh-1 text-light text-truncate"><?=$value['title']?><br><sub><?=$value['time']?></sub></p>
-	            <p class="card__text__watched text-light" hidden></p>
+	            <p class="card__text__watched text-light"></p>
         	</a>
           </div>
         </div>
