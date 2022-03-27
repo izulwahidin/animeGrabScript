@@ -4,6 +4,7 @@ RewriteCond %{REQUEST_URI} ^/search
 RewriteCond %{QUERY_STRING} q=(.*)
 RewriteRule (.*) /search/%1 [R=301,L,QSD]
 
+RewriteRule ^search/(.*)/page/(\d+)$ index.php?url=/search.html?keyword=$1&page=$2 [L,QSA]
 RewriteRule ^search/(.*)$ index.php?url=/search.html?keyword=$1 [L,QSA]
 
 RewriteRule ^404(.*)$ html/404.php$1 [L,QSA]
