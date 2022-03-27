@@ -1,7 +1,9 @@
 <?php
 define('DOMAIN', 'https://kissanime.eu.org'); //domain website
 define('TITLE', 'KissAnime'); //judul website
-$hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'])),true);
+
+$searchBar = ($_GET['page']) ? '&page='.$_GET['page'] : '';
+$hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'].$searchBar)),true);
 print_r($_GET);
 print_r($hasil);
 die();
