@@ -2,7 +2,7 @@
 define('DOMAIN', 'https://kissanime.eu.org'); //domain website
 define('TITLE', 'KissAnime'); //judul website
 $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'])),true);
-
+print_r($hasil);
 if(isset($hasil['data']['list'])){
 	include('./html/page.php');
 }elseif(isset($hasil['data']['list_eps'])){
