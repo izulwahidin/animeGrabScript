@@ -13,9 +13,9 @@ include('head.php');
     <div class="p-3 container list-group">
       <h2 class="p-1 text-light">List Episodes</h2>
 <?php foreach ($hasil['data']['list_eps'] as $key => $value): ?>
-      <a href="<?=DOMAIN.$value['url']?>" class="bg-dark text-light list-group-item d-flex justify-content-between align-items-center">
+      <a id="check_eps" href="<?=DOMAIN.$value['url']?>" class="bg-dark text-light list-group-item d-flex justify-content-between align-items-center">
         <?=$value['title']?>
-        <span id="check_eps" class="badge badge-primary badge-pill"></span>
+        <span class="badge badge-primary badge-pill"></span>
       </a>
 <?php endforeach ?>
     </div>
