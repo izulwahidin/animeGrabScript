@@ -1,0 +1,28 @@
+RewriteEngine On
+
+RewriteRule ^search/(.*)$ index.php?url=/search.html?keyword=$1 [L,QSA]
+
+RewriteRule ^404(.*)$ html/404.php$1 [L,QSA]
+
+RewriteRule ^raw/page/(\d+)$ index.php?url=/recently-added-raw?page=$1 [L,QSA]
+RewriteRule ^raw$ index.php?url=/recently-added-raw [L,QSA]
+
+RewriteRule ^dub/page/(\d+)$ index.php?url=/recently-added-dub?page=$1 [L,QSA]
+RewriteRule ^dub$ index.php?url=/recently-added-dub [L,QSA]
+
+RewriteRule ^movie/page/(\d+)$ index.php?url=/movies?page=$1 [L,QSA]
+RewriteRule ^movie$ index.php?url=/movies [L,QSA]
+
+RewriteRule ^season/page/(\d+)$ index.php?url=/new-season?page=$1 [L,QSA]
+RewriteRule ^season$ index.php?url=/new-season [L,QSA]
+
+RewriteRule ^popular/page/(\d+)$ index.php?url=/popular?page=$1 [L,QSA]
+RewriteRule ^popular$ index.php?url=/popular [L,QSA]
+
+RewriteRule ^ongoing/page/(\d+)$ index.php?url=/ongoing-series?page=$1 [L,QSA]
+RewriteRule ^ongoing$ index.php?url=/ongoing-series [L,QSA]
+
+RewriteRule ^watch/(.*)$ index.php?url=/videos/$1 [L,QSA]
+
+RewriteRule ^page/(\d+)$ index.php?url=/?page=$1 [L,QSA]
+RewriteRule ^(.*)$ index.php?url=/$1 [L,QSA]
