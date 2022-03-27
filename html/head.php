@@ -64,6 +64,8 @@ $seoDesc = isset($hasil['data']['description']) ? 'Watch '.$hasil['data']['title
     <meta name="og:image" content="<?= $hasil['data']['list_eps'][0]['image']['onerror'] ?? ''?>">
     <meta name="og:type" content="article">
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.js"></script>
   </head>
   <body style="background-color: #393E46">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #222831;">
