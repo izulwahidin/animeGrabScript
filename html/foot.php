@@ -6,7 +6,7 @@
     </footer>
     <script src="<?=DOMAIN?>/html/assets/js/bootstrap.bundle.min.js"></script>
     <script>
-    localStorage.setItem(sha1(window.location.href),'true');
+    localStorage.setItem('w'+sha1(window.location.href),'true');
     document.querySelectorAll('#check_eps').forEach(v => {
       let hashed = 'w'+sha1(v.href);
       // v.addEventListener('click', () => {
