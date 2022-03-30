@@ -8,7 +8,7 @@ var_dump($_GET);
 // print_r($hasil);
 // die();
 if(isset($hasil['data']['list'])){
-	if($_GET['page'] == 'true'){
+	if($_GET['sitemap'] == 'true'){
 		die('sitemap');
 	}
 	include('./html/page.php');
