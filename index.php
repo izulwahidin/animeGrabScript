@@ -4,11 +4,14 @@ define('TITLE', 'KissAnime'); //judul website
 
 $searchBar = ($_GET['page']) ? '&page='.$_GET['page'] : '';
 $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'].$searchBar)),true);
-// print_r($_GET);
-// print_r($hasil);
-// die();
-if(isset($hasil['data']['list'])){
+print_r($_GET);
+print_r($hasil);
+die();
+if(isset($hasil['data']['list']) && !empty($hasil['data']['list'])){
 	include('./html/page.php');
+}elseif(empty($hasil['data']['list_eps'])){
+	
+}
 }elseif(isset($hasil['data']['list_eps'])){
 	include('./html/watch.php');
 }else{
