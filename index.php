@@ -8,6 +8,9 @@ $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['u
 // print_r($hasil);
 // die();
 if(isset($hasil['data']['list'])){
+	if($_GET['page'] == 'true'){
+		die('sitemap');
+	}
 	include('./html/page.php');
 }elseif(isset($hasil['data']['list_eps'])){
 	include('./html/watch.php');
