@@ -4,7 +4,7 @@ define('TITLE', 'KissAnime'); //judul website
 
 $searchBar = ($_GET['page']) ? '&page='.$_GET['page'] : '';
 $hasil = json_decode(fetch('https://fulan.eu.org/anime/?url='.urlencode($_GET['url'].$searchBar)),true);
-var_dump($_GET);
+// var_dump($_GET);
 // print_r($hasil);
 // die();
 if(isset($hasil['data']['list'])){
