@@ -10,7 +10,7 @@ die();
 if(isset($hasil['data']['list']) && !empty($hasil['data']['list'])){
 	include('./html/page.php');
 }elseif(empty($hasil['data']['list_eps'])){
-	
+	echo 'x';
 }
 }elseif(isset($hasil['data']['list_eps'])){
 	include('./html/watch.php');
