@@ -1,6 +1,6 @@
 RewriteEngine On
 
-RewriteRule ^stream/(.*) watch/$1 [R=301]
+RedirectMatch 301 ^/stream/(.*) /watch/$1
 
 RewriteCond %{REQUEST_URI} ^/search
 RewriteCond %{QUERY_STRING} q=(.*)
