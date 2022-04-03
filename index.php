@@ -15,8 +15,8 @@ if(isset($hasil['data']['list'])){
 }elseif(isset($hasil['data']['list_eps'])){
 	include('./html/watch.php');
 }else{
-	// print_r($hasil);
-	header("Location: ".DOMAIN."/404?message=".urlencode($hasil['message']));
+	print_r($hasil);
+// 	header("Location: ".DOMAIN."/404?message=".urlencode($hasil['message']));
 }
 
 
